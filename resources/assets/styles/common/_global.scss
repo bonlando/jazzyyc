@@ -1,0 +1,714 @@
+body {
+  padding-top: 62px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 86px;
+  }
+}
+
+@font-face {
+  font-family: "heavitas";
+  src: url("/wp-content/themes/jazzyyc/dist/fonts/heavitas-webfont.eot");
+  src:
+    url("/wp-content/themes/jazzyyc/dist/fonts/heavitas-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/wp-content/themes/jazzyyc/dist/fonts/heavitas-webfont.woff2") format("woff2"),
+    url("/wp-content/themes/jazzyyc/dist/fonts/heavitas-webfont.woff") format("woff"),
+    url("/wp-content/themes/jazzyyc/dist/fonts/heavitas-webfont.ttf") format("truetype");
+}
+
+a {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.title {
+    color: black;
+  }
+}
+
+.yellow-bg {
+  background-color: $yellow;
+}
+
+.orange-bg {
+  background-color: $orange;
+}
+
+.darkorange-bg {
+  background-color: $darkorange;
+}
+
+.blue-bg {
+  background-color: $blue;
+}
+
+.darkred-bg {
+  background-color: $darkred;
+}
+
+.red-bg {
+  background-color: $red;
+}
+
+.green-bg {
+  background-color: $green;
+}
+
+.yellow-font {
+  color: $yellow !important;
+}
+
+.orange-font {
+  color: $orange !important;
+}
+
+.darkorange-font {
+  color: $darkorange !important;
+}
+
+.lightgray {
+  background-color: $lightgray !important;
+}
+
+.blue-font {
+  color: $blue !important;
+}
+
+.darkred-font {
+  color: $darkred !important;
+}
+
+.red-font {
+  color: $red !important;
+}
+
+.green-font {
+  color: $green !important;
+}
+
+.white-font {
+  color: white !important;
+}
+
+.lower {
+  text-transform: lowercase !important;
+}
+
+.inverse {
+  display: inline-block;
+  padding: 0.2rem;
+  color: white;
+  background-color: $primarydark;
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.primarydark-bg {
+  background-color: $primarydark;
+}
+
+.secondary-bg {
+  background-color: $secondary;
+}
+
+.tertiary-bg {
+  background-color: $tertiary;
+}
+
+.tertiarydark-bg {
+  background-color: $tertiarydark;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.pink-bg {
+  background-color: $pink;
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    text-shadow: 2px 2px 0 $pink, 5px 5px 0 $pinkdark;
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+}
+
+.primary {
+  background-color: $primary;
+  color: white;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    text-shadow: 2px 2px 0 $primary, 5px 5px 0 $primarydark;
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+
+  .inverse {
+    color: $white;
+    background-color: $primarydark;
+    box-shadow: 2px 2px 0 $primary, 5px 4px 0 darken($primarydark, 15%);
+  }
+
+  .btn-ghost {
+    color: white;
+    border-color: white;
+  }
+
+  a {
+    color: darken($primarydark, 15%);
+  }
+}
+
+.primarydark {
+  color: white;
+  background-color: $primarydark;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    color: white;
+    text-shadow: 2px 2px 0 $primarydark, 5px 5px 0 darken($primarydark, 10%);
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+
+  .inverse {
+    color: white;
+    background-color: $secondary;
+    box-shadow: 2px 2px 0 $primarydark, 5px 4px 0 darken($secondary, 15%);
+  }
+
+  .btn-ghost {
+    color: white;
+    border-color: white;
+  }
+
+  a {
+    color: $secondary;
+  }
+}
+
+.secondary {
+  color: white;
+  background-color: $secondary;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    color: white;
+    text-shadow: 2px 2px 0 $secondary, 5px 5px 0 darken($secondary, 15%);
+
+    &.entry-title {
+      text-shadow: 1px 1px 0 $secondary, 3px 3px 0 darken($secondary, 15%);
+    }
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+
+  .inverse {
+    color: white;
+    background-color: $secondarydark;
+    box-shadow: 2px 2px 0 $secondary, 5px 4px 0 darken($secondary, 15%);
+  }
+
+  .btn-ghost {
+    color: white;
+    border-color: white;
+  }
+
+  a {
+    color: $secondarydark;
+  }
+}
+
+.tertiary {
+  color: white;
+  background-color: $tertiary;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    color: $primarydark;
+    text-shadow: 2px 2px 0 $tertiary, 5px 5px 0 $tertiarydark;
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+
+  .inverse {
+    color: white;
+    background-color: $primarydark;
+    box-shadow: 2px 2px 0 $tertiary, 5px 4px 0 darken($primarydark, 15%);
+  }
+
+  .btn-ghost {
+    color: $primarydark;
+    border-color: $primarydark;
+  }
+
+  .btn-primary {
+    color: $tertiary;
+    border-width: 0;
+    background-color: $white;
+  }
+
+  a {
+    color: $primarydark;
+  }
+}
+
+.tertiarydark {
+  color: white;
+  background-color: $tertiarydark;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    text-shadow: 2px 2px 0 $tertiarydark, 4px 4px 0 darken($tertiarydark, 15%);
+
+    &.inverse {
+      text-shadow: none !important;
+    }
+  }
+
+  .inverse {
+    color: white;
+    background-color: $primarydark;
+    box-shadow: 2px 2px 0 $tertiarydark, 5px 4px 0 darken($primarydark, 15%);
+  }
+
+  .btn-ghost {
+    border-color: white;
+    color: white;
+  }
+
+  a {
+    color: $primarydark;
+  }
+}
+
+.white {
+  color: $black;
+  background-color: white;
+
+  .inverse {
+    color: white;
+    background-color: $primarydark;
+  }
+
+  .btn-ghost {
+    color: $primarydark;
+    border-color: $primarydark;
+    background-color: transparent !important;
+  }
+
+  .ticket-selector-tbl-qty-slct,
+  .button,
+  .ticket-selector-submit-btn {
+    @extend .btn-ghost;
+
+    color: $primarydark;
+
+    &:hover {
+      background-color: $primarydark;
+      color: white !important;
+    }
+  }
+
+  a {
+    color: $primarydark;
+  }
+
+  .entry-title a {
+    text-decoration: none;
+    background-color: $primarydark;
+    transition: all 0.5s ease;
+    color: white;
+
+    &:hover {
+      background-color: $primarydark;
+      color: $secondary;
+    }
+  }
+}
+
+.azz {
+  font-size: 80%;
+}
+
+.powered-by-event-espresso-credit {
+  display: none;
+}
+
+.dashicons,
+.ee-ical-sbmt {
+  display: none;
+}
+
+.ee-event-datetimes-ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.ee-status {
+  @extend .h4;
+
+  float: none;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(md) {
+    float: right;
+    font-size: 1.25rem;
+  }
+}
+
+.entry-title {
+  @extend .h4;
+}
+
+.view-details-btn {
+  display: none;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.image-header .ee-status {
+  display: none;
+}
+
+.ee-event-datetimes-li {
+  font-weight: bold;
+}
+
+.event-venues-h3 {
+  display: none;
+}
+
+.break-width-lg {
+  @include media-breakpoint-up(xl) {
+    width: 1140px;
+    margin-left: -110px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-header {
+  border-width: 0;
+  background-color: $secondary;
+
+  h3 {
+    color: $primarydark;
+  }
+}
+
+.collapse.show {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.espresso-event-list-wrapper-dv .espresso-venue-dv h4 {
+  font-size: 1rem;
+}
+
+.no-gutters-md {
+  margin-left: 0;
+  margin-right: 0;
+
+  @include media-breakpoint-up(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.row-full {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+.small {
+  font-size: 75%;
+}
+
+.espresso_events {
+  margin-bottom: 0;
+}
+
+.espresso_events .ee-status {
+  display: none;
+}
+
+.espresso_events .ee-status:first-child {
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.events-hp.white .entry-title a {
+  color: $primarydark;
+}
+
+body.home {
+  .event-link {
+    margin-bottom: 0;
+  }
+
+  .pagination {
+    display: none;
+  }
+}
+
+.anchor {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-2dot4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@include media-breakpoint-up(sm) {
+  .col-sm-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .col-md-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .col-lg-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .col-xl-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .tagline {
+    position: absolute;
+    left: 330px;
+    top: 2px;
+  }
+}
+
+p.attendee_limit_qtip {
+  display: none;
+}
+
+p.tool-venue {
+  font-weight: 700;
+  padding-left: 0.8rem;
+}
+
+.qtip-content {
+  line-height: 18px;
+}
+
+.qtip-0-title {
+  line-height: 20px;
+}
+
+// woo commerce
+
+.orderby {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.woocommerce ul.products li.product a img {
+  border: solid 3px $primarydark;
+  padding: 2rem 0;
+}
+
+h2.woocommerce-loop-product__title {
+  font-size: revert;
+  color: $primarydark;
+  margin: 0 0 0.6rem 0 !important;
+  padding: 0 !important;
+}
+
+.woocommerce ul.products li.product .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: $secondary !important;
+  color: $primary;
+
+  @extend .inverse;
+}
+
+.woocommerce ul.products li.product .button {
+  margin-top: 0;
+  clear: both;
+  float: right;
+}
+
+.products {
+  @extend .row;
+
+  display: flex;
+  align-items: stretch;
+
+  .product {
+    @extend .col-md-4;
+    @extend .col-lg-3;
+  }
+
+  &.related {
+    .product {
+      @extend .col-md-4;
+    }
+  }
+}
+
+.wc-forward {
+  display: block;
+}
+
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+  margin: 0 3.8% 2.992em 0;
+}
+
+.video-wrapper {
+  max-width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 1700px !important;
+  }
+}
+
+.img-dark {
+  filter: brightness(0.7);
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+
+.modal.show .modal-dialog {
+  max-width: 800px;
+  top: 5rem;
+  width: 80%;
+}

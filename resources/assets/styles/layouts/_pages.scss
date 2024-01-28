@@ -1,0 +1,453 @@
+.sponsor {
+  text-align: center;
+  border-bottom: solid 5px $lightgray;
+
+  @include media-breakpoint-up(md) {
+    border-right: solid 5px $lightgray;
+    border-bottom: solid 5px $lightgray;
+  }
+
+  a {
+    margin: 0 auto;
+    display: block;
+
+    img {
+      display: block;
+      max-height: 130px;
+      width: auto !important;
+      margin: 0 auto;
+    }
+  }
+}
+
+.headshot {
+  max-width: 50%;
+
+  @include media-breakpoint-up(md) {
+    max-width: 100%;
+  }
+}
+
+.section-header {
+  h2 {
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.ee-clearfix .ee-event-datetimes-li {
+  @include media-breakpoint-up(md) {
+    width: 35%;
+  }
+}
+
+.ee-registration-details-dv h5 {
+  margin-top: 2rem;
+}
+
+.event-image-container {
+  @extend .col-md-4;
+
+  a {
+    display: block;
+    overflow: hidden;
+
+    img {
+      @extend .rounded-circle;
+
+      transition: 0.5s ease all;
+      border: solid 0;
+
+      &:hover {
+        transform: scale(1.2);
+        border: solid 8px $primarydark;
+      }
+    }
+  }
+}
+
+.event-content-container {
+  @extend .col-md-8;
+}
+
+.espresso-venue-dv {
+  h4 {
+    > strong {
+      display: block;
+      margin-top: -1rem;
+
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+.pricing-hp {
+  display: none;
+}
+
+.events-hp {
+  .page-header {
+    display: none;
+  }
+
+  .event-image-container {
+    .band-members {
+      display: none !important;
+    }
+
+    a {
+      @include media-breakpoint-up(md) {
+        max-height: 360px;
+        margin-bottom: 2rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-height: 230px;
+        margin-bottom: 1rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 1rem;
+      }
+
+      img {
+        border-radius: 0 !important;
+
+        @include media-breakpoint-up(lg) {
+          transform: scale(1);
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .event-content-container {
+    width: 100%;
+    max-width: 100%;
+
+    form {
+      display: none;
+    }
+
+    .espresso-venue-dv {
+      a {
+        text-shadow: none;
+        text-decoration: none;
+      }
+
+      > strong {
+        display: none;
+      }
+
+      > div {
+        display: none;
+      }
+
+      .venue-details {
+        display: none;
+      }
+    }
+
+    .entry-title {
+      @extend .h4;
+
+      a {
+        background-color: transparent;
+        text-decoration: none;
+      }
+    }
+
+    .ee-event-datetimes-ul {
+      .ee-event-datetimes-li {
+        display: none;
+        font-size: 1rem;
+
+        .svg-inline--fa {
+          display: none;
+        }
+
+        &:first-child {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+
+    .event-tickets {
+      display: none;
+    }
+
+    .event-content {
+      p {
+        display: none;
+      }
+
+      .pricing-hp {
+        display: inline-block;
+      }
+    }
+  }
+
+  .ee-pagination-dv {
+    display: none;
+  }
+
+  &.three-lg {
+    article {
+      @extend .col-md-6;
+      @extend .col-lg-4;
+    }
+  }
+
+  &.four-lg {
+    article {
+      @extend .col-md-6;
+      @extend .col-lg-3;
+    }
+  }
+}
+
+.partner {
+  .event-content-container {
+    padding: 0 !important;
+  }
+}
+
+body.community-events {
+  .page-title {
+    display: none;
+  }
+}
+
+#image-feed {
+  > .container {
+    @extend .pt-4;
+    @extend .pt-sm-0;
+  }
+
+  .event-image-container {
+    @extend .col-md-12;
+    @extend .col-lg-12;
+  }
+
+  .event-content-container {
+    @extend .col-md-12;
+    @extend .col-lg-12;
+  }
+  // article {
+  //   padding: 0;
+  // }
+}
+
+#headliner {
+  .event-image-container {
+    @extend .col-md-6;
+    @extend .col-lg-5;
+    @extend .d-flex;
+    @extend .align-items-center;
+
+    a {
+      @include media-breakpoint-up(lg) {
+        max-height: 1000px;
+      }
+
+      img {
+        @extend .rounded-circle;
+
+        transform: scale(1);
+        border: solid 0;
+      }
+    }
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .event-content-container {
+    @extend .col-md-6;
+    @extend .col-lg-5;
+    @extend .d-flex;
+    @extend .align-items-center;
+
+    padding-right: 0 !important;
+
+    .event-link {
+      @extend .btn-lg;
+
+      border-radius: 0;
+    }
+
+    .venue-details {
+      display: none !important;
+    }
+
+    .ee-event-datetimes-li {
+      margin-bottom: 0;
+    }
+
+    .espresso-venue-dv > div {
+      display: block;
+    }
+
+    .ee-event-datetimes-li-daterange {
+      @extend .h5;
+    }
+
+    .band-members {
+      h5 {
+        display: none;
+      }
+
+      p {
+        display: block;
+      }
+    }
+
+    .espresso-venue-dv {
+      .venue-name {
+        margin-right: 10px;
+        margin-bottom: -1rem;
+      }
+    }
+
+    .espresso-venue-dv .ee-gmap-wrapper {
+      display: none;
+    }
+
+    .event-header {
+      h2 {
+        @extend .h2;
+
+        text-shadow: 2px 2px 0 $primarydark, 5px 5px 0 darken($primarydark, 10%);
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+#no-image-feed {
+  .event-image-container {
+    display: none;
+  }
+
+  .event-content-container {
+    @extend .col-md-12;
+    @extend .col-lg-12;
+  }
+
+  article {
+    @extend .col-md-6;
+    @extend .col-lg-3;
+
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &.partner {
+    article {
+      @extend .col-md-12;
+      @extend .col-lg-12;
+    }
+  }
+}
+
+.video-container iframe {
+  margin-top: 2rem;
+
+  .player .vp-controls .logo,
+  .player .vp-title,
+  .player .vp-sidedock,
+  .player .vp-sidedock .sidedock-inner {
+    display: none !important;
+  }
+}
+
+.video-container iframe:first-child {
+  margin-top: 0;
+}
+
+.video-container iframe:last-child {
+  margin-bottom: -7px;
+}
+
+.band-social {
+  font-size: 1.3rem;
+}
+
+.ee-registrations-list {
+  width: 100%;
+
+  tr {
+    margin-bottom: 2rem;
+  }
+}
+
+.ee-attention {
+  border: 4px solid $primarydark;
+  color: black;
+}
+
+.tiny-text {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.tkt-slctr-tbl-wrap-dv {
+  padding: 2rem;
+  border: 3px solid $primarydark;
+}
+
+#headliner.primarydark .event-image-container img:hover {
+  border: solid 15px $secondary;
+}
+
+#headliner.primary .event-image-container img:hover {
+  border: solid 15px $primarydark;
+}
+
+#headliner.secondary .event-image-container img:hover {
+  border: solid 15px $primarydark;
+}
+
+#headliner.tertiary .event-image-container img:hover {
+  border: solid 15px $primarydark;
+}
+
+#headliner.tertiarydark .event-image-container img:hover {
+  border: solid 15px $primarydark;
+}
+
+.video-box {
+  z-index: 99;
+
+  .fa-play-circle {
+    font-size: 8rem;
+    color: $primarydark;
+    z-index: 9;
+  }
+
+  .modal {
+    top: 100px;
+
+    .modal-dialog {
+      max-width: 750px;
+    }
+  }
+}
+
+.video-link {
+  z-index: 99;
+}

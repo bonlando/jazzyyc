@@ -1,0 +1,48 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+.ee-checkbox-multi-input-dv {
+  padding: 2rem;
+  border: solid 5px $primarydark;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+#spco-go-to-step-payment_options-submit {
+  float: left;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+
+  @include media-breakpoint-up(sm) {
+    float: none;
+    margin-top: 0;
+  }
+}
+
+.gform_wrapper li,
+.gform_wrapper form li {
+  margin-left: 1rem !important;
+  list-style: disc;
+}
+
+.gform_wrapper ul {
+  margin: 1rem 0;
+}

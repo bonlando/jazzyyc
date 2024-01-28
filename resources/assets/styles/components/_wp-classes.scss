@@ -1,0 +1,321 @@
+/**
+ * WordPress Generated Classes
+ * @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+ */
+
+.lrm-user-modal-container .lrm-switcher a {
+  background-color: $primarydark !important;
+  color: $secondary;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.lrm-font-svg .lrm-switch-to--login::before {
+  display: none;
+}
+
+.lrm-form a.button,
+.lrm-form button,
+.lrm-form input[type=submit],
+.lrm-form button[type=submit],
+.lrm-form #buddypress input[type=submit] {
+  background-color: $primarydark !important;
+  color: white !important;
+  border: solid;
+}
+
+.lrm-form label {
+  color: white;
+}
+
+.lrm-user-modal-container-inner {
+  background: $primarydark !important;
+}
+
+#ee-single-page-checkout-dv label {
+  display: block !important;
+}
+
+/** Media alignment */
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: ($spacer / 2) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: ($spacer / 2);
+  height: auto;
+}
+
+@include media-breakpoint-up(sm) {
+  .alignleft {
+    float: left;
+    margin-right: ($spacer / 2);
+  }
+
+  .alignright {
+    float: right;
+    margin-left: ($spacer / 2);
+  }
+}
+
+/** Captions */
+.wp-caption {
+  @extend .figure;
+}
+
+.wp-caption img {
+  @extend .figure-img;
+  @extend .img-fluid;
+}
+
+.wp-caption-text {
+  @extend .figure-caption;
+}
+
+/** Text meant only for screen readers */
+.screen-reader-text {
+  @extend .sr-only;
+  @extend .sr-only-focusable;
+}
+
+#espresso_calendar:not(.ui-widget) {
+  .fc-header-title h2 {
+    @extend .h2;
+  }
+
+  .fc-widget-header,
+  .fc-day-number {
+    font-family: $headings-font-family;
+  }
+
+  .fc-last.fc-first {
+    background-color: $primarydark;
+    color: white;
+  }
+
+  .fc-button {
+    border-color: $primarydark !important;
+    border-width: 2px !important;
+    font-family: $headings-font-family !important;
+    color: $primarydark !important;
+  }
+}
+
+.heateor_sss_sharing_container {
+  margin-bottom: 2rem;
+}
+
+.qtip {
+  font-size: 1rem !important;
+  line-height: 1rem;
+}
+
+.primarydark.events-hp .event-content-container .entry-title a {
+  color: white;
+  transition: 0.5s ease all;
+}
+
+.primary.events-hp .event-content-container .entry-title a {
+  color: white;
+  transition: 0.5s ease all;
+}
+
+.secondary.events-hp .event-content-container .entry-title a {
+  color: $secondarylight;
+  transition: 0.5s ease all;
+}
+
+.tertiary.events-hp .event-content-container .entry-title a {
+  transition: 0.5s ease all;
+}
+
+.tertiarydark.events-hp .event-content-container .entry-title a {
+  transition: 0.5s ease all;
+}
+
+.primarydark .events-hp .event-content-container .entry-title a {
+  color: white;
+  transition: 0.5s ease all;
+}
+
+.primary .events-hp .event-content-container .entry-title a {
+  color: white;
+  transition: 0.5s ease all;
+}
+
+.secondary .events-hp .event-content-container .entry-title a {
+  color: white;
+  transition: 0.5s ease all;
+}
+
+.tertiary .events-hp .event-content-container .entry-title a {
+  transition: 0.5s ease all;
+}
+
+.tertiarydark .events-hp .event-content-container .entry-title a {
+  transition: 0.5s ease all;
+}
+
+.primarydark.events-hp .event-content-container .entry-title a:hover {
+  color: $secondary;
+}
+
+.secondary.events-hp .event-content-container .entry-title a:hover {
+  color: white;
+}
+
+.tertiary.events-hp .event-content-container .entry-title a:hover {
+  color: white;
+}
+
+.tertiarydark.events-hp .event-content-container .entry-title a:hover {
+  color: white;
+}
+
+.primary.events-hp .event-content-container .entry-title a:hover {
+  color: $tertiary;
+}
+
+.white.events-hp .event-content-container .entry-title a:hover {
+  color: $tertiarydark;
+}
+
+.primarydark .events-hp .event-content-container .entry-title a:hover {
+  color: $secondary;
+}
+
+.secondary .events-hp .event-content-container .entry-title a:hover {
+  color: $secondarydark;
+}
+
+.tertiary .events-hp .event-content-container .entry-title a:hover {
+  color: white;
+}
+
+.tertiarydark .events-hp .event-content-container .entry-title a:hover {
+  color: white;
+}
+
+.primary .events-hp .event-content-container .entry-title a:hover {
+  color: $tertiary;
+}
+
+.white .events-hp .event-content-container .entry-title a:hover {
+  color: $tertiarydark;
+}
+
+#image-feed.events-hp .event-image-container a img:hover {
+  border: 0;
+}
+
+.pagination {
+  border-radius: 0;
+
+  .page-link {
+    border: solid 2px $primarydark;
+    text-decoration: none;
+    transition: 0.5ms ease all;
+
+    &:hover {
+      background-color: lighten($primarydark, 15%);
+      color: white;
+    }
+
+    &.current {
+      background-color: $primarydark;
+      color: white;
+    }
+  }
+}
+
+// display posts shortcode
+
+.news {
+  padding: 3rem 0 1rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 5rem 0 3rem;
+  }
+
+  .blog-date {
+    width: 35%;
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+    }
+  }
+
+  .listing-item {
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 3rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .excerpt-dash {
+      display: none;
+    }
+
+    .title {
+      @extend .h3;
+
+      display: block;
+      text-decoration: none;
+    }
+
+    .date {
+      text-align: center;
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 1.2rem;
+
+      @extend .h3;
+
+      @include media-breakpoint-up(md) {
+        font-size: 2.5rem;
+        padding: 0;
+      }
+    }
+
+    .excerpt {
+      .btn {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.ee-rem-dates-list {
+  margin: 0 !important;
+}
+
+.event-datetimes > h3 {
+  display: none;
+}
+
+.ee-rem-dates-list--box.ee-event-datetimes-li-DTU.ee-rem-date__date,
+.ee-rem-dates-list--circle.ee-event-datetimes-li-DTU.ee-rem-date__date,
+.ee-rem-dates-list--card.ee-event-datetimes-li-DTU.ee-rem-date__stripe,
+.ee-rem-dates-list--stripe.ee-event-datetimes-li-DTU.ee-rem-date__stripe {
+  background: $secondary;
+}
+
+.mp_wrapper {
+  @extend .mb-4;
+
+  margin-bottom: 3rem;
+}

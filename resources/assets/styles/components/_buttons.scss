@@ -1,0 +1,146 @@
+.btn {
+  border-radius: 0 !important;
+  border: none;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    letter-spacing: 1px;
+  }
+}
+
+.btn-primary {
+  background-color: $primarydark !important;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary, 15%);
+  }
+}
+
+.white .btn-primary {
+  color: white;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: $primarydark;
+  border-color: $primarydark;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+.primary .btn-ghost:hover {
+  color: $primary;
+}
+
+.primarydark .btn-ghost:hover {
+  color: $primarydark;
+}
+
+.secondary .btn-ghost:hover {
+  color: $secondary;
+}
+
+.tertiary .btn-ghost:hover {
+  color: $tertiary;
+}
+
+.tertiarydark .btn-ghost:hover {
+  color: $tertiarydark;
+}
+
+.white .btn-ghost:hover {
+  color: $white;
+  border-color: $white;
+  background-color: $primarydark !important;
+}
+
+.gform_button {
+  @extend .btn;
+  @extend .btn-ghost;
+}
+
+.ticket-selector-tbl-qty-slct,
+.button {
+  @extend .btn;
+
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.ticket-selector-submit-btn {
+  @extend .btn;
+}
+
+.ticket-selector-submit-btn,
+.ticket-selector-submit-btn-wrap {
+  float: none;
+}
+
+.reg-now-btn,
+.button,
+.view-cart-lnk,
+#ee-stripe-button-btn,
+.mepr-submit {
+  @extend .btn;
+  @extend .btn-primary;
+
+  padding: 10px 5px;
+}
+
+.white .event-cart-register-button {
+  margin-top: 2rem;
+
+  @extend .btn-lg;
+}
+
+.btn-link {
+  color: $primary;
+}
+
+.ee-button,
+a.reg-now-btn {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.ee-stripe-button-btn {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+}
+
+#ee_reg_qstn-9642-12-input-dv {
+  padding: 2rem;
+  border: 5px solid $primarydark;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+.ticket-selector-submit-btn-wrap {
+  display: block;
+  margin-top: 1rem;
+}
+
+.event-link {
+  margin-bottom: 1rem;
+}
+
+.blog-content .excerpt-more {
+  @extend .btn;
+  @extend .btn-ghost;
+
+  display: table !important;
+  margin-top: 1rem !important;
+}
+
+.woocommerce a.button {
+  @extend .btn;
+  @extend .btn-primary;
+}

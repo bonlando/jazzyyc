@@ -1,0 +1,11 @@
+.espresso-event-list-wrapper-dv {
+  .espresso-venue-dv {
+    h4 {
+      @extend .h5;
+    }
+
+    .ee-gmap-wrapper {
+      display: none;
+    }
+  }
+}

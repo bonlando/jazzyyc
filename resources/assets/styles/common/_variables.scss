@@ -1,0 +1,80 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$yellow: #f7b915;
+$orange: #f05423;
+$blue: #6dbae3;
+$darkred: #840905;
+$red: #bb221a;
+$green: #94aa4f;
+$darkorange: darken($orange, 15%);
+$plum: #9c364c;
+$purple: #7258a5;
+$mainorange: #f06c53;
+$pink: #ed008c;
+$pinkdark: darken($pink, 20%);
+$burntorange: $orange;
+$bar: rgba(240, 85, 35, 0.8);
+$lightgray: #ced1d5;
+
+// original styles (summer jazz fest 19)
+// $yellow: #f8b744;
+// $orange: #f60;
+// $blue: #6dbae3;
+// $darkred: #750d14;
+// $red: #bf1d21;
+// $green: #94aa4f;
+// $darkorange: darken($orange, 15%);
+// $plum: #9c364c;
+// $purple: #7258a5;
+// $mainorange: #f06c53;
+// $burntorange: #ef4d24;
+// $purplebar: rgba(52, 47, 110, 0.8);
+// $lightgray: #ced1d5;
+
+$navprimary: $darkred;
+$navdarken: darken($navprimary, 10%);
+$navlighten: lighten($navprimary, 15%);
+$navsecondary: white;
+$navsecondarydarken: darken($navsecondary, 15%);
+
+// summer jazz fest 19
+// $navprimary: darken($plum, 15%);
+// $navdarken: darken($navprimary, 10%);
+// $navlighten: lighten($navprimary, 15%);
+// $navsecondary: white;
+// $navsecondarydarken: darken($navsecondary, 15%);
+
+$primary: $red;
+$primarydark: darken($red, 15%);
+$secondary: $yellow;
+$secondarydark: darken($yellow, 25%);
+$secondarylight: lighten($secondary, 70%);
+$tertiary: $orange;
+$tertiarylight: lighten($tertiary, 35%);
+$tertiarydark: darken($tertiary, 15%);
+$alternate: $blue;
+$secondaryalt: $green;
+
+// $primary: $red;
+// $primarydark: $darkred;
+// $secondary: $yellow;
+// $tertiary: $orange;
+// $tertiarydark: $darkorange;
+// $alternate: $blue;
+// $secondaryalt: $green;
+
+$headings-font-family:  "heavitas", "Helvetica Neue", helvetica, arial, sans-serif;
+$fa-font-path: "~font-awesome/fonts";
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$img-dark: brightness(0.3);
