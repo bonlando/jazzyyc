@@ -90,3 +90,17 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+    /**
+ * Satisfy WP check for theme.json without this file being present.
+ *
+ * @since 6.3
+ * @link https://github.com/roots/sage/issues/3143
+ */
+add_filter('theme_file_path', function ($path, $file) {
+  if ($file === 'theme.json') {
+      return false;
+  }
+
+  return $path;
+}, 0, 2);
