@@ -115,6 +115,15 @@ a {
   background-color: $secondary;
 }
 
+.black-bg {
+  background-color: black;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
 .tertiary-bg {
   background-color: $tertiary;
 }

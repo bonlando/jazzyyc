@@ -69,7 +69,7 @@ $featured_mobile_img_url = get_the_post_thumbnail_url($post->ID, 'featured-mobil
   @elseif (has_post_thumbnail() & (is_page() || is_single() || is_category())) 
   {{-- desktop --}}
   
-  <div class="row-full tertiary image-fail d-none d-md-block">
+  <div class="row-full black-bg image-fail d-none d-md-block">
     <div class="container">
       <div class="row d-flex justify-content-center"> 
         <div class="col-md-10 col-xl-8">

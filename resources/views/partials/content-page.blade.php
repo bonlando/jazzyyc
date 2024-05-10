@@ -22,9 +22,6 @@
         @endif
         
 @php the_content() @endphp
-@if(get_field('code_for_membee'))
-	{!! $code_for_membee !!}
-@endif
 
 
       </div>

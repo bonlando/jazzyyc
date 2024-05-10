@@ -10,7 +10,7 @@
  * @ version		4+
  */
 
-/*************************** IMPORTANT *************************
+/*************************** IMPORTANT ************************
  * if you are creating a custom template based on this file,
  * and do not wish to use the template display order controls in the admin,
  * then change the following filter to:

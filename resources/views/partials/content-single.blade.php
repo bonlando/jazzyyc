@@ -1,24 +1,35 @@
-<div class="pt-md-5 white">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 col-xl-8">
-<article @php post_class() @endphp>
-  <div class="entry-content">
-    
-@include('partials/entry-meta')
+<div class="row justify-content-center">
+  <div class="col-lg-10 col-xl-8">
+      <article @php post_class() @endphp>
+          <div class="entry-content pt-4 pb-4">
 
-    @if (in_category('event-photos'))
-    <a class="mb-3 btn btn-ghost" href="/event-photos">View more event photos</a>
-    @endif
-    @php the_content() @endphp
-    @if (in_category('event-photos'))
-    <a class="mt-5 mb-5 btn btn-ghost" href="/event-photos">View more event photos</a>
-    @elseif (in_category('latest-news'))
-    <a class="mt-5 mb-5 btn btn-ghost" href="/latest-news">View more news</a>
-    @endif
+              @include('partials/entry-meta')
+
+              @php
+                  $prev_post = get_previous_post(true);
+                  $next_post = get_next_post();
+              @endphp
+              @php the_content() @endphp
+              @if (!empty($prev_post))
+                  <a class="btn btn-ghost" href="{{ get_permalink($prev_post->ID) }}">
+                      <i class="fas fa-chevron-circle-left"></i> Previous Post
+                  </a>
+              @else
+                  <a class="btn btn-ghost"
+                      href="{{ get_category_link(get_the_category()[0]->term_id) }}">
+                     See all {{ get_the_category()[0]->name }} articles
+                  </a>
+              @endif
+
+              @if (!empty($next_post))
+                  <a class="btn btn-ghost" href="{{ get_permalink($next_post->ID) }}">
+                      Next Post <i class="fas fa-chevron-circle-right"></i>
+                  </a>
+              @endif
+
+          </div>
+
+      </article>
   </div>
-  <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
- 
-
-    </footer>
-</article>
+</div>
+</div>
